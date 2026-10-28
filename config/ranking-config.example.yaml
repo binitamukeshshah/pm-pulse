@@ -1,0 +1,24 @@
+version: 1
+
+weights:
+  interview_and_role_relevance: 0.35
+  learning_goals_and_skill_gaps: 0.25
+  cross_context_transferability: 0.20
+  target_company_relevance: 0.10
+
+# Collected for future calibration, but intentionally excluded from the
+# weighted score until enough episode-level preference data exists.
+tracked_only:
+  personal_interest: true
+
+queue:
+  policy: closed_list
+  replacement_required_when_full: true
+  default_capacity_per_source: 10
+
+quality_gate:
+  require_evaluation_pass: true
+  require_claim_sample: true
+  require_quote_audit: true
+  require_number_retrace: true
+  require_said_vs_read_labels: true

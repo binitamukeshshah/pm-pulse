@@ -1,0 +1,13 @@
+.DS_Store
+.env
+*.env
+audio/
+downloads/
+guides/
+private/
+transcripts/
+qa-logs/
+*.mp3
+*.m4a
+*.wav
+*.webm
